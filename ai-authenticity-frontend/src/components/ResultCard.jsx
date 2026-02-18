@@ -1,4 +1,4 @@
-import React,{ useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
 const ResultCard = ({ result }) => {
@@ -12,7 +12,7 @@ const ResultCard = ({ result }) => {
       { width: "0%" },
       { width: `${confidence}%`, duration: 1 }
     );
-  }, []);
+  }, [confidence]);
 
   return (
     <div
@@ -27,7 +27,9 @@ const ResultCard = ({ result }) => {
       <div className="w-full h-2 bg-slate-700 rounded mt-3 overflow-hidden">
         <div
           ref={bar}
-          className={`h-full ${isReal ? "bg-emerald-400" : "bg-red-400"}`}
+          className={`h-full ${
+            isReal ? "bg-emerald-400" : "bg-red-400"
+          }`}
         />
       </div>
 

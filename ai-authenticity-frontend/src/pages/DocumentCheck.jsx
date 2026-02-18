@@ -13,16 +13,11 @@ const DocumentCheck = () => {
   return (
     <PageWrapper>
       <div className="max-w-3xl mx-auto px-6 py-24">
-        <h2 className="text-3xl font-semibold mb-6">
-          Document Forgery Detection
-        </h2>
+        <h2 className="text-3xl font-semibold mb-6">Document Forgery Detection</h2>
 
         <input type="file" className="block w-full mb-4 text-slate-400" />
 
-        <button
-          onClick={scan}
-          className="px-6 py-3 bg-sky-500 rounded-xl text-black font-semibold"
-        >
+        <button onClick={scan} className="px-6 py-3 bg-sky-500 rounded-xl text-black font-semibold">
           Scan Document
         </button>
 
